@@ -1,0 +1,2 @@
+- !include automation/garage_door_open.yaml
+- !include automation/garage_door_close.yaml

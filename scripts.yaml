@@ -1,0 +1,10 @@
+garage_door_open:
+  sequence:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.garage_door_set_switch
+garage_door_close:
+  sequence:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.garage_door_set_switch

@@ -1,0 +1,29 @@
+today:
+  name: Today
+  icon: mdi:calendar-clock
+  entities:
+   - sensor.date
+   - sensor.time
+   - sensor.outside_temperature
+   - sensor.outside_humidity
+   - sensor.weather_precip_probability
+
+garage:
+  name: Garage
+  icon: mdi:glassdoor
+  entities:
+    - sensor.garage_temp
+    - sensor.garage_humidity
+    - switch.garage_door
+    - binary_sensor.garagedoorstate
+
+outlets:
+  name: Outlets
+  icon: mdi:flash
+  view: yes
+  entities:
+    - switch.zap1
+    - switch.zap2
+    - switch.zap3
+    - switch.zap5
+

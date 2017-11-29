@@ -1,0 +1,4 @@
+- platform: slack
+  api_key: !secret slackapi
+  name: slack
+  default_channel: '@dels'

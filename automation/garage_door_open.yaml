@@ -1,0 +1,9 @@
+alias: Garage Door was opened
+hide_entity: True
+trigger:
+  platform: state
+  entity_id: sensor.garage_door
+  from: 'Closed'
+  to: '*Open*'
+action:
+  service: script.garage_door_open

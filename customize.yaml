@@ -1,0 +1,51 @@
+switch.front_porch:
+  friendly_name: Front Porch
+  icon: mdi:lightbulb-outline
+switch.garage_door:
+  friendly_name: Garage Door
+  icon: mdi:glassdoor
+sensor.garage_door:
+  icon: mdi:glassdoor
+  hidden: true
+switch.garage_light:
+  friendly_name: Garage Light
+  icon: mdi:lightbulb-outline
+switch.masterbath_light:
+  friendly_name: Masterbath Light
+  icon: mdi:lightbulb-outline
+switch.myrianes_room:
+  friendly_name: Myrianes Light
+  icon: mdi:lightbulb-outline
+switch.kitchen_light:
+  friendly_name: Kitchen Light
+  icon: mdi:lightbulb-outline
+script.garage_door_notify:
+  hidden: true
+script.garage_door_open:
+  hidden: true
+script.garage_door_close:
+  hidden: true
+sensor.date:
+  icon: mdi:calendar
+sensor.time:
+  icon: mdi:clock
+sensor.outside_humidity:
+  icon: mdi:water-percent
+sensor.weather_precip_probability:
+  icon: mdi:weather-rainy
+switch.garage_door_set_switch:
+  hidden: true
+switch.workbench:
+  icon: mdi:lightbulb-outline
+switch.zap1:
+  icon: mdi:power-socket
+switch.zap2:
+  icon: mdi:power-socket
+switch.zap3:
+  icon: mdi:power-socket
+switch.zap5:
+  icon: mdi:power-socket
+group.outlets:
+  friendly_name: Outlets
+sensor.garage_humidity:
+  icon: mdi:water-percent

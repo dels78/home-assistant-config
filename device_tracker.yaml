@@ -1,0 +1,3 @@
+- platform: icloud
+  username: martin.delisle@gmail.com
+  password: !secret icloud_password

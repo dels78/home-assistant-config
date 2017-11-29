@@ -1,0 +1,8 @@
+  - platform: template
+    sensors:
+      garagedoorstate:
+        friendly_name: "Garage Door"
+        device_class: opening
+        value_template: >-
+          {{ is_state('sensor.garage_door', '*Open*') 
+                            or is_state('sensor.garage_door', 'Open') }}

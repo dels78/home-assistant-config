@@ -1,0 +1,44 @@
+- platform: wunderground
+  api_key: !secret wundergroundapi
+  monitored_conditions:
+    - alerts
+    - temp_f
+    - wind_mph
+    - feelslike_f
+- platform: time_date
+  display_options:
+    - date
+    - time
+
+- platform: mqtt
+  state_topic: "MyMQTT/2/1/V_DISTANCE"
+  name: "Garage Door"
+  value_template: >
+                    {%- if value == "0" -%}
+                      Closed
+                    {%- elif value == "1" -%}
+                      Open
+                    {%- elif value == "2" -%}
+                      *Open*
+                    {%- endif %}
+
+#- platform: mqtt
+#  state_topic: "MyMQTT/100/0/V_HUM"
+#  name: "Outside Humidity"
+#  unit_of_measurement: "%"
+
+#- platform: mqtt
+#  state_topic: "MyMQTT/100/1/V_TEMP"
+#  name: "Outside Temperature"
+#  unit_of_measurement: "°F"
+
+- platform: mqtt
+  state_topic: "MyMQTT/2/0/V_HUM"
+  name: "Garage Humidity"
+  unit_of_measurement: "%"
+
+- platform: mqtt
+  state_topic: "MyMQTT/2/1/V_TEMP"
+  name: "Garage Temp"
+  unit_of_measurement: "°F"
+

@@ -1,0 +1,4 @@
+sequence:
+- service: switch.turn_on
+  data:
+    entity_id: switch.garage_door_set_switch
